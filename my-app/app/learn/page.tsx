@@ -1,4 +1,4 @@
-export default function learnpge() {
+export default function LearnPage() {
   return (
     <div className="bg-pink-500">
       <div className='bg-orange-300'>

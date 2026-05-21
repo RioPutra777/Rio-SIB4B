@@ -1,17 +1,60 @@
-export default function takepage() {
-    return
-    <div className="bg-gray-300 h-screen flex gap-5 justify-center items-center flex-col text-black">
-       <div className="flex gap-4 justify center">
-
-        <div className="bg-white h-110 w-80 flex p-5 rounded-4x1 flex-col gap-4">
-
-            <div className="flex justify-center">
-                 <img src="a1.jpg className="h-60 w-75 items-center rounded-4x1
-                 />
-
+export default function HolidayPage() {
+  return (
+    <div className="h-screen text-gray-900 flex justify-center items-center gap-4">
+      <div className="bg-gray-50 w-80 p-2 rounded-4xl ">
+        <img src={"/golden-gate.jpg"} className="h-72 w-full rounded-4xl" />
+        <div className="flex flex-col gap-4 p-4">
+          <div>
+            <h1 className="text-3xl font-bold">San Francisco</h1>
+            <p className="text-gray-400">Premium Economy</p>
+          </div>
+          <div className="flex gap-6 flex-wrap">
+            <div className="flex gap-2 items-center justify-center">
+              <img src={"/tag.svg"} className="h-5 w-5" />
+              <p className="font-medium">from $240</p>
             </div>
-            
+            <div className="flex gap-2 items-center justify-center">
+              <img src={"/plane-tilt.svg"} className="h-5 w-5" />
+              <p className="font-medium">SFO</p>
+            </div>
+          </div>
+          <div className="flex justify-between items-center gap-2">
+            <button className="bg-black text-white p-3 rounded-full w-56">
+              Search flight
+            </button>
+            <button className="rounded-full border-2 border-gray-200 p-3 flex justify-center items-center">
+              <img src={"/heart.svg"} className="w-6 h-6" />
+            </button>
+          </div>
         </div>
-        </div> 
+      </div>
+      <div className="bg-gray-50 w-80 p-2 rounded-4xl ">
+        <img src={"/ikn.jpg"} className="h-72 w-full rounded-4xl" />
+        <div className="flex flex-col gap-4 p-4">
+          <div>
+            <h1 className="text-3xl font-bold">Nusantara</h1>
+            <p className="text-gray-400">Premium Economy</p>
+          </div>
+          <div className="flex gap-6 flex-wrap">
+            <div className="flex gap-2 items-center justify-center">
+              <img src={"/tag.svg"} className="h-5 w-5" />
+              <p className="font-medium">from $100</p>
+            </div>
+            <div className="flex gap-2 items-center justify-center">
+              <img src={"/plane-tilt.svg"} className="h-5 w-5" />
+              <p className="font-medium">IKN</p>
+            </div>
+          </div>
+          <div className="flex justify-between items-center gap-2">
+            <button className="bg-black text-white p-3 rounded-full w-56">
+              Search flight
+            </button>
+            <button className="rounded-full border-2 border-gray-200 p-3 flex justify-center items-center">
+              <img src={"/heart.svg"} className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+  );
 }
